@@ -1,0 +1,287 @@
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  .top {
+    header {
+      justify-content: space-between;
+      .legs {
+        display: none;
+      }
+
+      .title {
+        justify-content: center;
+        width: 155px;
+        h1 {
+          margin-left: 5px;
+        }
+      }
+      .points {
+        .point {
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          &:first-child {
+            margin-left: 30px;
+          }
+          &:last-child {
+            margin-right: 10px;
+          }
+          .effective {
+            width: 130px;
+          }
+        }
+      }
+    }
+
+    .main {
+      justify-content: space-around;
+
+      .preview {
+        display: none;
+      }
+
+      .info {
+        text-shadow: #f2f8ff 0.5px 0.5px 0;
+
+        .round {
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  .separator {
+    margin-top: 20px;
+  }
+
+  .previewMobile {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .symptoms {
+    .symptom {
+      align-items: center;
+      justify-content: space-around;
+      .card {
+        flex-direction: column;
+        justify-content: center;
+
+        .symptomName {
+          max-width: 100%;
+          margin: 10px;
+        }
+
+        &::before {
+          top: -8%;
+          left: 16%;
+        }
+      }
+      .definition {
+        white-space: normal;
+        height: 66px;
+      }
+    }
+  }
+
+  .stats {
+    max-width: 90%;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: -webkit-center;
+
+    .graph {
+      top: -20%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 95%;
+  }
+
+  .top {
+    header {
+      flex-direction: column;
+
+      .title {
+        justify-content: center;
+        margin: 20px 0 5px;
+        width: auto;
+
+        h1 {
+          font-size: 30px;
+          margin-left: 15px;
+        }
+      }
+
+      .points {
+        justify-content: center;
+      }
+    }
+
+    .main {
+      flex-direction: column;
+      align-items: center;
+
+      .preview {
+        display: block;
+        top: 30%;
+        left: 0;
+        width: 52%;
+
+        .prodImage {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .info {
+        margin-left: 40%;
+        padding-top: 30px;
+        padding-right: 0;
+      }
+
+      .form {
+        width: 225px;
+        height: 440px;
+        margin: 60px 0 40px;
+        .formContent {
+          .formContent__section::after {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .separator {
+    margin-top: 20px;
+  }
+
+  .previewMobile {
+    display: none;
+  }
+
+  .fungus {
+    max-width: 80%;
+    margin: 20px auto;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .symptoms {
+    flex-direction: column;
+    .symptom {
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 20px;
+      .card {
+        flex-direction: column;
+        justify-content: center;
+
+        .symptomName {
+          max-width: 100%;
+          margin: 10px;
+        }
+
+        &::before {
+          top: -8%;
+          left: 16%;
+        }
+      }
+      .definition {
+        width: 55%;
+        align-items: baseline;
+        margin-top: 20px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top {
+    header {
+      .points {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 30px 0 0 10%;
+        .point {
+          width: 100%;
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          .effective {
+            width: auto;
+          }
+
+          .text {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .main {
+      .preview {
+        display: none;
+      }
+
+      .info {
+        margin-left: 0;
+
+        .infoBottom {
+          margin-top: 10px;
+
+          .complex {
+            .description {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .form {
+        margin-top: 10px;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .separator {
+    margin-top: 0;
+  }
+
+  .previewMobile {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.stats {
+  max-width: 80%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px 0 10px;
+
+  p {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,52 @@
+@mixin iconSize($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin fontParam(
+  $fontSize: 22px,
+  $fontWeight: 400,
+  $color: black,
+  $fontStyle: normal
+) {
+  font-family: "Roboto", sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+  font-style: $fontStyle;
+}
+
+@mixin input {
+  position: relative;
+
+  &:before {
+    content: "";
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 28%;
+    z-index: 5;
+  }
+}
+
+@mixin card {
+  content: "";
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 90px;
+  position: absolute;
+  top: -12%;
+  left: -12%;
+}
+
+@mixin line {
+  content: "";
+  border-bottom: 1px solid $orange;
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  top: 8px;
+}
